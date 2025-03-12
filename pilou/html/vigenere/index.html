@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Le code Vigenere</title>
+        <link rel="stylesheet" type="text/css" href="../../css/Navigation.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href=../../index.html> Page Accueil</a>
+                </li>
+                <li class="deroulant">
+                    <a href="#">Des exemples</a>
+                    <ul class="popup">
+                        <li><a href=chiffre.html>Le chiffrage</a></li>
+                        <li><a href=dechiffre.html>Le déchiffrage</a></li>
+                    </ul>
+                </li>
+            </nav>
+        <h1>Voici la methode Vigenere</h1>
+        <h2>Qu'est ce que c'est ?</h2>
+        <div class="container"><img class="float-right" src="../../img/vigenere.jpg" width="128px" style="vertical-align:middle" alt="Image de Monsieur Vigenere"><p>Le chiffre de Vigenère est un système de chiffrement par substitution polyalphabétique dans lequel une même lettre du message clair peut, suivant sa position dans celui-ci, être remplacée par des lettres différentes, contrairement à un système de chiffrement mono alphabétique comme le chiffre de César (qu'il utilise cependant comme composant). Cette méthode résiste ainsi à l'analyse de fréquences, ce qui est un avantage décisif sur les chiffrements mono alphabétiques. Cependant le chiffre de Vigenère a été percé par le major prussien Friedrich Kasiski qui a publié sa méthode en 1863. Depuis cette époque, il n‘offre plus aucune sécurité. Il est nommé ainsi au XIXe siècle en référence au diplomate du XVIe siècle Blaise de Vigenère, qui le décrit (intégré à un chiffrement plus complexe) dans son traité des chiffres paru en 1586. On trouve en fait déjà une méthode de chiffrement analogue dans un court traité de Giovan Battista Bellaso paru en 1553.</p></div>
+        <h2>En quoi ça consiste ?</h2>
+        <p>Ce chiffrement introduit la notion de clé. Une clé se présente généralement sous la forme d'un mot ou d'une phrase. Pour pouvoir chiffrer le texte, chaque caractère utilise une lettre de la clé pour effectuer la substitution. Plus la clé est longue et variée, mieux le texte est chiffré. Il y a eu une période où des passages entiers d'œuvres littéraires étaient utilisés pour chiffrer les plus grands secrets. Les deux correspondants avaient en leurs mains un exemplaire du même livre pour s'assurer de la bonne compréhension des messages.</p>
+        <h2>Comment chiffrer ?</h2>
+        <div class="container"><img src="../../img/tableau.jpg" alt="Une image du tableau de Vigenere"><p>Pour chaque lettre en clair, on sélectionne la colonne correspondante et pour une lettre de la clé on sélectionne la ligne adéquate, puis au croisement de la ligne et de la colonne on trouve la lettre chiffrée. La lettre de la clé est à prendre dans l'ordre dans laquelle elle se présente et on répète la clé en boucle autant que nécessaire.<br>Pour plus d'informations, vous pouvez consulter le site <a href="https://fr.wikipedia.org/wiki/Chiffre_de_Vigenere">wikipedia</a></p></div><br>
+    </body>
+</html>

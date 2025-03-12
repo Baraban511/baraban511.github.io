@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déchiffrement</title>
+    <link rel="stylesheet" href="../css/StylesAlphaMelange.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="exDechiffrement">
+        Exemple de déchiffrement de substitution monoalphabétique par mélange grâce a la clé
+    </h1>
+    <button onclick="afficherCle()">
+        cliquez pour afficher la clé que vous avez enregistré a la page précédente
+    </button>
+    <p id="resCle" class="CleParagraphe">
+    </p>
+    <form class="formDetransform">
+        <label for="messCode"> Ecrivez un mot en message codé pour le voir en clair</label>
+        <input id="messCode" class="inputMessCode">
+        <button onclick="reTransform()" type="button"> cliquez pour avoir le message en clair</button>
+        <p id="resMotDecode"></p>
+    </form>
+    <a href="../accueil.html"> Cliquez pour aller a l'accueil</a>
+    
+<script src="fonctionAlphaMelange.js"></script> 
+
+     
+</body>
+</html>

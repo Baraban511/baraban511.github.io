@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+    margin: 0 px;
+    padding: 0 px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background:  rgba(0, 0, 224, 0.724);
+}
+nav a{
+    display:block;
+    text-decoration:none;
+    color: rgb(254, 254, 254);
+    border-bottom:2px solid transparent;
+    padding:10px 0px;
+    background:  rgb(0, 0, 194);
+    border-radius: 10px;
+
+}
+nav a:hover{
+    color:orange;
+    border-bottom:2px solid gold;
+}
+nav ul{
+    list-style-type:none; /* Pour supprimer la puce devant le texte de l'énumération*/
+}
+nav ul::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+nav ul li{
+    float:left;
+    width:50%;
+    text-align:center;
+    position: relative;
+}
+.popup{
+    display:none;
+    box-shadow :0 px 1 px 2 px #CCC;
+    background-color:white;
+    position:absolute;
+    width:100%;
+    z-index:1000;
+}
+.popup li{
+    float:none;
+    width:100%;
+    text-align:left;
+}
+.popup a{
+    padding:10 px;
+    border-bottom:none;
+}
+nav > ul li:hover .popup{
+    display:block;
+}
+h1{
+    color: rgb(230, 189, 164);
+    font-family: Impact, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:20px;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:16px;
+    color: white;
+}
+.container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input{
+    width: 100px;
+    padding: 8px;
+    margin: 4px ;
+    border-radius: 10px;
+    background-color: rgb(230, 189, 164);
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:16px;
+    color:rgb(255, 255, 255);
+}

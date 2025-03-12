@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Le chiffrement Mono-Alphabétique par mélange</title>
+        <link rel="stylesheet" href="../css/StylesAlphaMelange.css"/>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <h1 class="titrePresentation"> La substitution mono-alphabétique par mélange </h1>
+        <p class="pPresentation"> La substitution mono-alphabétique par mélange
+            est une méthode de chiffrement 
+            qui consiste à 
+            substituer chaque lettres de l'alphabet par une 
+            autre lettre choisie
+            aléatoirement. Dans notre cas,
+            ces lettres 
+            seront choisies par l'utilisateur.
+        <br>
+        <br>
+            Prenons un exemple: si l'utlisateur <br> définit un tableau 
+            tel que celui-ci:
+        <br>
+        <br>  
+        <img  src="../img/tableau, alphabet mélangé.png" alt="vous auriez du voir 
+        un tableau d'un alphabet et de sa substitution mélangé" 
+        width="150" height="350"   class="tableauAlpha">
+        <br>
+        <br>
+        La phrase en clair "LA NSI EST MON COURS PREFERE", donnera l'expression
+        <br>
+        "QKVYA ZYLFE VHEXS ISZPZ SZ" 
+        <br>
+        Vous avez du le remarquer, le message codé se présente 
+        par groupe de cinq lettres
+
+
+
+        <br>
+        <br>
+        ⚠️attention: Chaque lettre ne doit n'avoir qu'une seule 
+        substitution et inversement, une substitution ne doit être 
+        attribué qu'a une seul lettre, sinon le chiffrement ne peut 
+        pas marcher.
+
+        <br>
+        <br>
+
+            Maintenant, pour déchiffrer un message codé par substitution mono-alphabétique par mélange, il suffit de faire l'inverse. 
+            En reprenant la clé, c'est a dire l'alphabet que l'utilisateur a rentré on peut facilement déchiffrer un mot.
+            Par exemple, si l'on rentre le code "FKFKV" le mot déchiffré est "MAMAN".
+            <br>
+            <br>
+
+            Vous pouvez maintenant tester sur un exemple:
+        </p>    
+        <a class="lienChiffrement" href="ChiffrementAlphabetMelange.html"> cliquez pour aller sur la page permettant de tester le chiffrement </a>
+        <br>
+        <br>
+        
+    </body>
+</html>

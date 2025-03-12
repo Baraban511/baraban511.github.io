@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:rgba(0, 0, 225, 0.728)
+}
+.container {
+    position:center;
+    text-align: center;
+    background:floralwhite;
+    border-radius: 10px;
+
+}
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.popup{
+    display:none;
+    box-shadow :0 px 1 px 2 px #CCC;
+    background-color:white;
+    position:absolute;
+    width:100%;
+    z-index:1000;
+}
+
+h1{
+color:antiquewhite;
+font-family: Impact, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size:20px;
+position:top;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:16px;
+    color:red;
+}

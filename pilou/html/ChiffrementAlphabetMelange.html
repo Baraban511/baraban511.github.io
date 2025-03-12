@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemple Chiffrement</title>
+    <link rel="stylesheet" href="../css/StylesAlphaMelange.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form class="formulaireAlpha">
+        <h1 class="Choisissez"> Choisissez votre alphabet aléatoire </h1>
+        <br>
+        <label for="inpA" > Le A devient un : </label>
+        <input id="inpA" value="Z">
+        <br>
+        <label for="inpB" > Le B devient un : </label>
+        <input id="inpB" value="A">
+        <br>
+        <label for="inpC" > Le C devient un : </label>
+        <input id="inpC" value="E">
+        <br>
+        <label for="inpD" > Le D devient un : </label>
+        <input id="inpD" value="R">
+        <br>
+        <label for="inpE" > Le E devient un : </label>
+        <input id="inpE" value="T">
+        <br>
+        <label for="inpF" > Le F devient un : </label>
+        <input id="inpF" value="Y">
+        <br>
+        <label for="inpG" > Le G devient un : </label>
+        <input id="inpG" value="U">
+        <br>
+        <label for="inpH" > Le H devient un : </label>
+        <input id="inpH" value="I">
+        <br>
+        <label for="inpI" > Le I devient un : </label>
+        <input id="inpI" value="O">
+        <br>
+        <label for="inpJ" > Le J devient un : </label>
+        <input id="inpJ" value="P">
+        <br>
+        <label for="inpK" > Le K devient un : </label>
+        <input id="inpK" value="Q">
+        <br>
+        <label for="inpL" > Le L devient un : </label>
+        <input id="inpL" value="S">
+        <br>
+        <label for="inpM" > Le M devient un : </label>
+        <input id="inpM" value="D">
+        <br>
+        <label for="inpN" > Le N devient un : </label>
+        <input id="inpN" value="F">
+        <br>
+        <label for="inpO" > Le O devient un : </label>
+        <input id="inpO" value="G">
+        <br>
+        <label for="inpP" > Le P devient un : </label>
+        <input id="inpP" value="H">
+        <br>
+        <label for="inpQ" > Le Q devient un : </label>
+        <input id="inpQ" value="J">
+        <br>
+        <label for="inpR" > Le R devient un : </label>
+        <input id="inpR" value="K">
+        <br>
+        <label for="inpS" > Le S devient un : </label>
+        <input id="inpS" value="L">
+        <br>
+        <label for="inpT" > Le T devient un : </label>
+        <input id="inpT" value="M">
+        <br>
+        <label for="inpU" > Le U devient un : </label>
+        <input id="inpU" value="W">
+        <br>
+        <label for="inpV" > Le V devient un : </label>
+        <input id="inpV" value="X">
+        <br>
+        <label for="inpW" > Le W devient un : </label>
+        <input id="inpW" value="C">
+        <br>
+        <label for="inpX" > Le X devient un : </label>
+        <input id="inpX" value="V">
+        <br>
+        <label for="inpY" > Le Y devient un : </label>
+        <input id="inpY" value="B">
+        <br>
+        <label for="inpZ" > Le Z devient un : </label>
+        <input id="inpZ" value="N">
+        <br>
+        <button type="button" onclick="enregistrelettres()">
+            Cliquez pour enregistrer
+        </button>
+        <p id="resEnreg"> </p>
+
+
+    </form>
+    <br>
+    <form class="formulaireTransform">
+        <label for="messageClair" > Entrez un message clair: </label>
+        <br>
+        <input id="messageClair" class="inputMessClair">
+        <button type="button" onclick="transform()">
+            Cliquez pour obtenir le message codé
+        </button>
+        <p id="resMotCode"></p>
+    </form>
+    <a href="DéchiffrementAlphaMelange.html"> Cliquez pour essayer le déchiffrement d'un mot codé</a>
+
+<script src="fonctionAlphaMelange.js"></script> 
+
+    
+</body>
+</html>

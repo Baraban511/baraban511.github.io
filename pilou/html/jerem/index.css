@@ -1,0 +1,82 @@
+::selection {
+    background-color: #008080;
+    color: #fbffee;
+}
+html {
+    scrollbar-color: #6b7280 #fbffee;
+}
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+p {
+    font-size: 1rem (16px);
+    line-height: calc(1.5 / 1);
+}
+.title {
+    font-weight: 900;
+    font-size: 1.25rem;
+    line-height: calc(1.75 / 1.25);
+    text-align: center;
+}
+.subtitle {
+    font-weight: 800;
+    font-size: 1.125rem (18px);
+    line-height: calc(1.75 / 1.125);
+}
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+.big-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box {
+    background-color: white;
+    box-shadow:
+        0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 2px;
+    max-width: 30em;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.box:hover {
+    box-shadow:
+        0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.usageList {
+    list-style: none;
+    padding-left: 25px;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+.active {
+    font-weight: 900;
+    color: black;
+}
+a {
+    color: grey;
+    text-decoration-line: none;
+}
+a:hover {
+    color: black;
+}

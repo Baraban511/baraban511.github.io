@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon formulaire</title>
+    <link rel="stylesheet" type="text/css" href="../css/chiffrement_decalage.css">
+</head>
+<body>
+    <h1>Bienvenue sur le formulaire</h1>
+    <p>Remplissez ce formulaire et vous aurez votre propre code secret</p>
+    <form id="formulaire" onsubmit="return creerCodeSecret(event)">
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="decalage">Nombre de caractères pour le décalage :</label>
+        <input type="number" id="decalage" name="decalage" required>
+
+        <label for="message">Message à chiffrer :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+    <div id="resultat" style="display:none;">
+        <h2>Votre code secret :</h2>
+        <p id="messageSecret"></p>
+        <div class="link-container">
+            <p>Maintenant que tout a été présenté, remplissez le formulaire suivant en cliquant sur cet <a href="formulaire_dechiffrement.html">accès</a> pour déchiffrer un code secret.</p>
+        </div>
+    </div>
+    <script src="../scripts/formulaire.js"></script>
+</body>
+</html>

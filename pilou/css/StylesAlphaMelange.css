@@ -1,0 +1,254 @@
+
+body {
+    background-color: rgb(32, 2, 116);
+}
+
+.formulaireAlpha{
+    position: relative;
+    left: 100px;
+
+    max-width: 300px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgba(0, 21, 255, 0.278));
+    box-shadow: 8px 5px 50px black;
+}
+
+.formulaireTransform{
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgba(0, 21, 255, 0.278));
+    border-radius: 8px;
+    box-shadow: 8px 5px 50px black;
+    padding: 10px;
+    max-width: 550px;
+    width: 100%;
+    position:fixed;
+    top:20px;
+    left: 500px;
+
+}
+
+.inputMessClair{
+    width: 430px;
+    height: 150px;
+
+    padding-left: 10px;
+    padding-top: 10px;
+
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    margin-left: 20px ;
+    margin-right: 10px ;
+
+    border-radius: 10px;
+    background-color: rgb(252, 252, 252);
+
+    font-size: 35px;
+}
+
+
+.inputMessClair, textarea{
+    padding-top: 10px;
+}
+
+
+
+.Choisissez{
+    font-family:"Anton", serif ;
+    font-weight: 400;
+
+    font-style: normal;
+    margin-left: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+label{
+    font-family: "Roboto Slab", serif;
+
+    margin-left: 25px;
+    color: white;
+}
+
+input{
+
+
+    width: 100px;
+    padding: 8px;
+    margin: 4px ;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+p{
+    color: white;
+}
+
+
+
+button{
+    font-family: "Roboto Slab", serif;
+
+    background:  rgb(0, 0, 194);
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 10px; 
+    font-size: 16px; 
+
+
+    transition:  0.3s ease, transform 0.2s ease;
+    
+}
+
+button:hover{
+    background-color: rgb(1, 93, 198) ;
+    transform: scale(1.05);
+}
+
+button:focus{
+    background-color: green;
+}
+
+a{
+    display: block;
+
+    width: 450px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 45px;
+
+    background:  rgb(0, 0, 194);
+    border-radius: 10px;
+
+    position: fixed;
+    left: 600px;
+    top: 400px;
+
+    font-size: 20px;
+    color: rgb(254, 254, 254);
+
+    box-shadow: 8px 5px 50px black;
+    transition:  0.3s ease, transform 0.2s ease;
+
+}
+a:hover{
+    color: rgb(0, 255, 179);
+    transform: scale(1.05);
+}
+
+
+
+
+.formDetransform{
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgba(0, 21, 255, 0.278));
+    border-radius: 8px;
+    box-shadow: 8px 5px 50px black;
+    padding: 10px;
+    width: 490px;
+    position:fixed;
+    top:100px;
+    left: 700px;
+    
+
+}
+
+.inputMessCode{
+    width: 430px;
+    height: 150px;
+
+    padding-left: 10px;
+    padding-top: 10px;
+
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    margin-left: 20px ;
+    margin-right: 10px ;
+
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+
+    font-size: 35px;
+}
+.exDechiffrement{
+    font-family:"Anton", serif ;
+    font-weight: 400;
+    
+    margin-left: 20px;
+    color: white;
+}
+
+.CleParagraphe{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+.titrePresentation{
+    font-family:"Anton", serif ;
+    font-weight: 400;
+
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 20px;
+    color: white;
+
+
+}
+
+.tableauAlpha{
+    position: relative;
+    top: 10px;
+    left: 100px;
+
+    width: 200px ;
+    height: 500px;
+}
+
+
+.pPresentation{
+    position: relative;
+    top: 50px;
+    left: 10px;
+
+
+    font-family: "Roboto Slab", serif;
+
+    margin-left: 25px;
+    color: white;
+    font-size: 30px;
+}
+.lienChiffrement{
+    display: block;
+
+    width: 550px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 45px;
+
+    background:  rgb(0, 0, 194);
+    border-radius: 10px;
+
+    position: relative;
+    left: 100px;
+    top: 100px;
+
+    font-size: 20px;
+    color: rgb(254, 254, 254);
+
+    margin-bottom: 100px;
+}

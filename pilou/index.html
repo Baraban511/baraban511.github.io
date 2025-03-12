@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>La cryptologie</title>
+        <link rel="stylesheet" type="text/css" href="css/accueil.css">
+
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href=index.html> Page Accueil</a>
+                </li>
+                <li class="deroulant">
+                    <a href="#">Chiffrement symétrique</a>
+                    <ul class="popup">
+                        <li><a href=html/Cesar.html>Le codage cesar</a></li>
+                        <li><a href=html/decalage.html>alphabet décalé</a></li>
+                        <li><a href=html/MonoFlushPresentation.html>alphabet mélangé</a></li>
+                        <li><a href=html/vigenere/index.html>le codage vigenere</a></li>
+                        <li><a href=html/Enigma.html>La machine Enigma</a></li>
+                        <li><a href=html/jerem/index.html>le codage AES</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant">
+                    <a href="#">Chiffrement asymétrique</a>
+                    <ul class="popup">
+                        <li><a class="disabled">Le codage RSA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="html/decriptage.html"><img src="img/pirate.jpg" width=10%></a>
+        <h1> Qu'est ce que la cryptologie ?</h1>
+        <p>
+            La cryptologie est "la science du secret". Elle englobe la cryptographie (l'écriture secrète) et
+            la cryptanalyse (l'analyse de l'écriture secrète). Etymologiquement la racine crypto provient du latin et du grec et
+            signifie ce qui est dissimulé ou caché.<br><br>
+            Avant considérée comme un art, la cryptologie est une science depuis le XXe siècle. Cependant, la cryptographie est utilisée depuis l'Antiquité.
+            Elle est même devenue un thème de recherche scientifique et nous l'utilisons tous les jours dans notre vie quotidienne :<br>
+            - communications entre un périphérique Bluetooth et l'ordinateur (sinon n'importe qui pourrait intercepter
+            les messages entre le clavier sans fil et l'ordinateur et donc savoir ce que vous tapez),<br>- dans l'Internet sécurisé (Que penseriez vous d'un
+            système où l'on pourrait connaître votre numéro de carte bleue et votre code secret en 'écoutant' simplement les échanges de données entre le
+            site marchand et votre ordinater ou votre téléphone ?)<br>
+        </p>
+        <h1> Petit lexique, pour nous comprendre </h1>
+        <p>
+            <b><u>chiffrer, chiffrement</u></b> : transformer à l'aide d'une clé et d'une méthode connues le contenu d'un message clair (texte clair) en
+            un texte incompréhensible (texte chiffré) pour celui qui ne connait pas la clé et la méthode.<br><br>
+            <b><u>déchiffrer, déchiffrement</u></b> : retrouver le message clair à partir du message chiffré grâce à la cle connue.<br><br>
+            <b><u>décrypter, décryptage</u></b> : retrouver le message clair à partir du message connu sans connaître la clé. On parle aussi de "casser un code".<br><br>
+            <b><u>cryptogramme</u></b> : synomyme pour message chiffré.<br><br>
+            <b><u>cryptosystème</u></b> : algorithme de chiffrement.<br><br>
+            En revanche, les termes 'cryter' et 'cryptage' sont considérés comme incorrects par l'ANSSI
+            car le fait de "chiffrer un message à l'aide d'une clé inconnue" n'a pas de sens.<br>
+        </p>
+        <h1> différentes méthodes de chiffrage</h1>
+        <p>
+            <b><u>chiffrement symétrique</u></b> : On parle de chiffrement symétrique lorsque la clé qui a servi à chiffrer le message est une clé secrète.
+            La connaître, c'est être capable de déchiffrer le message. Il faut donc que les deux correspondants, Alice et Bob en disposent. Il faut donc utiliser un système sur pour que les
+            deux personnes disposent de la clé. <br><br>Par exemple si Alice l'envoie à Bob dans courrier électronique, le courriel n'est pas chiffré et peut être intercepté et donc la confidentialité de la clé
+            se retrouve compromise. Il faut donc utiliser un autre moyen de communication pour se l'échanger. <br><br>Les premiers systèmes de chiffrements
+            étaient des chiffrements symétriques (code César, Vigenère) et il en existe encore aujourd'hui (AES, DES). La taille de la clé de chiffrement est essentielle car
+            il faut qu'elle soit suffisamment longue pour qu'elle ne puisse être retrouvée par calcul en connaissant la puissance de calcul des ordinateurs. Actuellement, une clé doit avoir
+            une longueur minimale de 128 bits, ce qui fait 2^128 valeurs possibles et qui nécessiterait à une personne voulant casser le code par 'force brute' (c'est à dire en testant toutes les possibilités)
+            plusieurs milliards de fois l'age de l'univers pour le casser.
+            <br><br>
+
+            <b><u>chiffrement asymétrique</u></b> : Dans le chiffrement asymétrique, la clé de chiffrement est publique, tout le monde peut l'utiliser. Elle n'aide en rien à déchiffrer le message.
+            La clé de déchiffrement ou clé privée est une clé secrète. Elle ne quitte jamais le système du destinataire du crytogramme. Donc pas de risque qu'elle soit récupérée par un tiers.<br><br>
+            Supposons Alice et Bob, deux personnes voulant communiquer en toute confidentialité. Chacun crée son jeu de clé pubique/privée. Dans un premier temps, ils s'échangent leurs clés publiques.
+            Alice garde chez elle sa clé privée et Bob la sienne. Quand Alice envoie à Bob un message, elle utilise la clé publique de Bob pour le chiffrer.
+            Quand Bob reçoit le message, il le déchiffre avec sa clé privée qui n'a pas quitté son ordinateur ... La sécurité est donc plus importante que dans le chiffrement symétrique.
+            <br><br>De nombreux systèmes d'échanges en temps réel (commerce électronique) fonctionnent ainsi. Chaque partie (client et vendeur) génère son jeu de clé, s'échange les clés publiques,
+            les utilise pendant la transaction et utilise les clés privées pour déchiffrer les communications. A la fin de la transaction, les jeux de clés sont supprimés.
+            <br><br>
+        </p>
+    </body>
+</html>

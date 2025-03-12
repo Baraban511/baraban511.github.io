@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Codage AES</title>
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div>
+                <a href="./index.html" class="active">Introduction</a>
+            </div>
+            <div>
+                <a href="./demo.html">Démonstration</a>
+            </div>
+        </nav>
+        <p class="title">Introduction au Codage AES</p>
+        <div class="container">
+            <div class="big-box">
+                <div class="box">
+                    <p class="subtitle">Qu'est-ce que l'AES ?</p>
+                    <p>
+                        L'AES (Advanced Encryption Standard) est un algorithme
+                        de chiffrement symétrique adopté comme norme de
+                        chiffrement par le gouvernement américain en 2001. Il
+                        est largement utilisé pour sécuriser les données
+                        sensibles dans de nombreux systèmes, y compris les
+                        communications, les fichiers stockés, et les réseaux.
+                    </p>
+                </div>
+                <div class="box">
+                    <p class="subtitle">Pourquoi l'utiliser ?</p>
+                    <p>
+                        L'AES est populaire en raison de sa rapidité, de sa
+                        sécurité élevée, et de sa mise en œuvre matérielle et
+                        logicielle efficace.
+                    </p>
+                    <ul class="usageList">
+                        <li>
+                            🌐 La protection des communications sur Internet
+                            (HTTPS, VPN).
+                        </li>
+                        <li>
+                            💾 Le chiffrement de fichiers sur disque (BitLocker,
+                            VeraCrypt).
+                        </li>
+                        <li>📱 Les applications de messagerie sécurisée.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <p class="subtitle">Comment fonctionne l'AES ?</p>
+                <p>
+                    L'AES utilise une clé secrète pour chiffrer et déchiffrer
+                    des données. Il fonctionne par blocs de 128 bits et permet
+                    trois tailles de clé différentes : 128 bits, 192 bits et 256
+                    bits. Le processus de chiffrement inclut plusieurs étapes
+                    principales :
+                </p>
+                <ul>
+                    <li>
+                        SubBytes : Substitution non linéaire des octets via une
+                        table de substitution (S-Box).
+                    </li>
+                    <li>
+                        ShiftRows : Décalage cyclique des lignes d'un tableau de
+                        données.
+                    </li>
+                    <li>
+                        MixColumns : Transformation linéaire mélangeant chaque
+                        colonne du tableau.
+                    </li>
+                    <li>
+                        AddRoundKey : Combinaison du texte chiffré avec une clé
+                        ronde par une opération XOR.
+                    </li>
+                </ul>
+                <p>
+                    Le déchiffrement est essentiellement l'inverse du
+                    chiffrement, appliquant des transformations inverses avec la
+                    même clé secrète.
+                </p>
+            </div>
+            <div class="big-box">
+                <div class="box">
+                    <p class="subtitle">Limitations</p>
+                    <p>
+                        Bien que l'AES soit considéré comme extrêmement
+                        sécurisé, sa sécurité repose sur la protection de la clé
+                        secrète. Si la clé est compromise, les données chiffrées
+                        peuvent être décryptées.
+                    </p>
+                </div>
+                <div class="box">
+                    <p class="subtitle">Conclusion</p>
+                    <p>
+                        L'AES reste aujourd'hui l'une des méthodes de
+                        chiffrement les plus fiables pour la protection des
+                        données. Sa large adoption et sa robustesse en font un
+                        choix privilégié pour de nombreuses applications de
+                        sécurité informatique.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

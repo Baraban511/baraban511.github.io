@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déchiffrement du message codé</title>
+    <link rel="stylesheet" type="text/css" href="../css/chiffrement_decalage.css">
+</head>
+<body>
+    <h1>Bienvenue sur la page de déchiffrement</h1>
+    <p>Entrez votre message codé et le nombre de caractères pour le décalage afin de le déchiffrer.</p>
+    <form id="formulaire" onsubmit="return decrypterMessage(event)">
+        <label for="decalage">Nombre de caractères pour le décalage :</label>
+        <input type="number" id="decalage" name="decalage" required>
+
+        <label for="messageChiffre">Message codé :</label>
+        <textarea id="messageChiffre" name="messageChiffre" rows="4" required></textarea>
+
+        <button type="submit">Déchiffrer</button>
+    </form>
+    
+    <div id="resultat" style="display:none;">
+        <h2>Votre message déchiffré :</h2>
+        <p id="messageDechiffre"></p>
+    </div>
+    <script src="../scripts/formulaire_dechiffrement.js"></script>
+</body>
+</html>
