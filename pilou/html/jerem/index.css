@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Mona Sans";
+    src:
+        url("https://links.barab.me/cdn/font/Mona-Sans.woff2") format("woff2"),
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+     font-family: "Mona Sans", sans-serif;
+}
 ::selection {
     background-color: #008080;
     color: #fbffee;
@@ -5,17 +15,15 @@
 html {
     scrollbar-color: #6b7280 #fbffee;
 }
-body {
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-}
-
 p {
     font-size: 1rem (16px);
     line-height: calc(1.5 / 1);
+}
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin: 5px;
+box-sizing: border-box;
 }
 .title {
     font-weight: 900;
@@ -46,9 +54,10 @@ p {
         0 4px 6px -1px rgb(0 0 0 / 0.1),
         0 2px 4px -2px rgb(0 0 0 / 0.1);
     padding: 2px;
-    max-width: 30em;
+    max-width: 50em;
     border-radius: 10px;
     transition: all 0.3s ease;
+    flex-basis: 100%;
 }
 .box:hover {
     box-shadow:
@@ -79,4 +88,25 @@ a {
 }
 a:hover {
     color: black;
+}
+.relative {
+    position: relative;
+    display: flex;
+    align-content: center;
+justify-content: space-between;
+}
+.key-button {
+    position: absolute;
+    right: 5px;
+    top: 20%;
+    display: flex;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+button:active {
+    transform: scale(0.95);
+}
+.output {
+    overflow-wrap: break-word;
 }
